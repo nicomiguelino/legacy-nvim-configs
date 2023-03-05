@@ -22,6 +22,7 @@ function module.init()
             dependencies = { 'nvim-lua/plenary.nvim' }
         },
         'crusoexia/vim-monokai',
+        'github/copilot.vim',
     })
 end
 
