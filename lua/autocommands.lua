@@ -18,3 +18,5 @@ function module.init()
         })
     end
 end
+
+return module

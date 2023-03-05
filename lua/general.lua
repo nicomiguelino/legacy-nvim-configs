@@ -25,3 +25,5 @@ end
 function module.init()
     set_global_options()
 end
+
+return module
