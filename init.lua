@@ -16,4 +16,4 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 -- Monokai configuration
 
-vim.opt.colorscheme = 'monokai'
+vim.cmd 'colorscheme monokai'
