@@ -4,3 +4,4 @@ local lazy = require('lazy')
 
 general.init()
 autocommands.init()
+lazy.init()
