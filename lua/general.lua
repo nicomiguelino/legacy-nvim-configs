@@ -23,6 +23,7 @@ function set_global_options()
 end
 
 function module.init()
+    vim.g.mapleader = ' '
     set_global_options()
 end
 
