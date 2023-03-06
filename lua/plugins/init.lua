@@ -31,7 +31,6 @@ function module.init()
     })
 
     telescope_config.init()
-    airline_config.init()
 end
 
 return module
