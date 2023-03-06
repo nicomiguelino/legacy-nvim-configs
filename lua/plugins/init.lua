@@ -28,14 +28,13 @@ function module.init()
             "catppuccin/nvim",
             name = "catppuccin",
         },
-        {
-            'nvim-lualine/lualine.nvim',
-            dependencies = { 'nvim-tree/nvim-web-devicons' }
-        }
+        'nvim-lualine/lualine.nvim',
+        'nvim-tree/nvim-web-devicons',
     })
 
     telescope_config.init()
     require('lualine').setup()
+    require('nvim-web-devicons').setup()
 end
 
 return module
