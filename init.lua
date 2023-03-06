@@ -6,5 +6,5 @@ general.init()
 autocommands.init()
 plugins.init()
 
--- Monokai configuration
-vim.cmd 'colorscheme monokai'
+-- Color scheme
+vim.cmd.colorscheme "catpuccin"
