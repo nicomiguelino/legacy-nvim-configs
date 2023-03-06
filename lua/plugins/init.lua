@@ -1,3 +1,5 @@
+local telescope_config = require('plugins/telescope_config')
+
 local module = {}
 
 function module.init()
@@ -24,6 +26,8 @@ function module.init()
         'crusoexia/vim-monokai',
         'github/copilot.vim',
     })
+
+    telescope_config.init()
 end
 
 return module
