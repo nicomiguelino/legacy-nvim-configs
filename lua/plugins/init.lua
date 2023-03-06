@@ -24,10 +24,7 @@ function module.init()
             dependencies = { 'nvim-lua/plenary.nvim' }
         },
         'github/copilot.vim',
-        {
-            "catppuccin/nvim",
-            name = "catppuccin",
-        },
+        'crusoexia/vim-monokai'.
         'nvim-lualine/lualine.nvim',
         'nvim-tree/nvim-web-devicons',
     })

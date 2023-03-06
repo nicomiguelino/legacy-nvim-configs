@@ -9,4 +9,4 @@ plugins.init()
 keybindings.init()
 
 -- Color scheme
-vim.cmd.colorscheme "catppuccin-frappe"
+vim.cmd.colorscheme 'monokai'
