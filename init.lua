@@ -7,4 +7,4 @@ autocommands.init()
 plugins.init()
 
 -- Color scheme
-vim.cmd.colorscheme "catpuccin"
+vim.cmd.colorscheme "catppuccin-frappe"
