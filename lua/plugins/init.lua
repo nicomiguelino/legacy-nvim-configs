@@ -1,4 +1,5 @@
 local telescope_config = require('plugins/telescope_config')
+local airline_config = require('plugins/airline_config')
 
 local module = {}
 
@@ -27,10 +28,13 @@ function module.init()
         {
             "catppuccin/nvim",
             name = "catppuccin",
-        }
+        },
+        'vim-airline/vim-airline',
+        'vim-airline/vim-airline-themes',
     })
 
     telescope_config.init()
+    airline_config.init()
 end
 
 return module
