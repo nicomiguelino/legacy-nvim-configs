@@ -28,6 +28,10 @@ function module.init()
             "catppuccin/nvim",
             name = "catppuccin",
         },
+        {
+            'nvim-lualine/lualine.nvim',
+            dependencies = { 'kyazdani42/nvim-web-devicons' }
+        }
     })
 
     telescope_config.init()
