@@ -14,7 +14,7 @@ function module.init()
     set_keymap('n', '<leader>w', '<C-w>', {noremap = true})
     init_tab_keymaps()
 
-    set_keymap('n', '<leader>hn', ':nohlsearch<CR>')
+    set_keymap('n', '<leader>hn', ':nohlsearch<CR>', {noremap = true})
 end
 
 return module
