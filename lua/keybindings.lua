@@ -8,7 +8,7 @@ function module.init()
     set_keymap('n', '<leader>tj', ':tabprevious<CR>', {noremap = true})
     set_keymap('n', '<leader>tl', ':tabnext<CR>', {noremap = true})
     set_keymap('n', '<leader>ti', ':tabmove +1<CR>', {noremap = true})
-    set_keymap('n', '<leader>tj', ':tabmove -1<CR>', {noremap = true})
+    set_keymap('n', '<leader>tk', ':tabmove -1<CR>', {noremap = true})
 end
 
 return module
