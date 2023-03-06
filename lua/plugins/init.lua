@@ -35,6 +35,7 @@ function module.init()
     })
 
     telescope_config.init()
+    require('lualine').setup()
 end
 
 return module
