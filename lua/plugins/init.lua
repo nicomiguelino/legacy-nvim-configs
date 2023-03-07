@@ -27,7 +27,6 @@ function module.init()
         'crusoexia/vim-monokai',
         'nvim-lualine/lualine.nvim',
         'nvim-tree/nvim-web-devicons',
-        'sheerun/vim-polyglot',
     })
 
     telescope_config.init()
