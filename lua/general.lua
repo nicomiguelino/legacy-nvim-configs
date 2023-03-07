@@ -1,25 +1,29 @@
 local module = {}
 
 function set_global_options()
-    vim.opt.relativenumber = true
-    vim.opt.number = true
-    vim.opt.hlsearch = true
-    vim.opt.hidden = true
-    vim.opt.incsearch = true
-    vim.opt.visualbell = false
-    vim.opt.ignorecase = true
-    vim.opt.swapfile = false
+    local options = {
+        relativenumber = true
+        number = true
+        hlsearch = true
+        hidden = true
+        incsearch = true
+        visualbell = false
+        ignorecase = true
+        swapfile = false
+        expandtab = true
+        tabstop = 4
+        softtabstop = 4
+        shiftwidth = 4
+        shiftround = true
+        autoindent = true
+        copyindent = true
+        smarttab = true
+        cursorline = true
+    }
 
-    vim.opt.expandtab = true
-    vim.opt.tabstop = 4
-    vim.opt.softtabstop = 4
-    vim.opt.shiftwidth = 4
-
-    vim.opt.shiftround = true
-    vim.opt.autoindent = true
-    vim.opt.copyindent = true
-    vim.opt.smarttab = true
-    vim.opt.cursorline = true
+    for k, v in pairs(options) do
+        vim.opt[k] = v
+    end
 end
 
 function module.init()
