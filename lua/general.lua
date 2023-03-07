@@ -43,6 +43,13 @@ local function set_folding_options()
             vim.cmd("normal zx")
         end
     })
+
+    vim.api.nvim_create_autocmd("FileType", {
+        pattern = "htmldjango",
+        callback = function(args)
+            vim.opt_local.foldmethod = 'manual'
+        end
+    })
 end
 
 function module.init()
