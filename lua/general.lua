@@ -30,7 +30,6 @@ local function set_folding_options()
     local options = {
         foldmethod = 'syntax',
         foldlevel = 99,
-        foldnestmax = 1,
         foldenable = false,
     }
 
