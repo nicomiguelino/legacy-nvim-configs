@@ -1,6 +1,6 @@
 local module = {}
 
-function set_global_options()
+local function set_global_options()
     local options = {
         relativenumber = true,
         number = true,
@@ -26,9 +26,30 @@ function set_global_options()
     end
 end
 
+local function set_folding_options()
+    local options = {
+        foldmethod = 'syntax',
+        foldlevel = 99,
+        foldnestmax = 1,
+        foldenable = false,
+    }
+
+    for k, v in pairs(options) do
+        vim.opt[k] = v
+    end
+
+    vim.api.nvim_create_autocmd("InsertLeave", {
+        pattern = "*",
+        callback = function(args)
+            vim.cmd("normal zx")
+        end
+    })
+end
+
 function module.init()
     vim.g.mapleader = ' '
     set_global_options()
+    set_folding_options()
 end
 
 return module
