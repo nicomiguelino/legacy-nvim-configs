@@ -28,6 +28,13 @@ function module.init()
         'nvim-lualine/lualine.nvim',
         'nvim-tree/nvim-web-devicons',
         'sheerun/vim-polyglot',
+        {
+            'nvim-tree/nvim-tree.lua',
+            dependencies = {
+                'nvim-tree/nvim-web-devicons',
+            },
+            version = 'nightly',
+        }
     })
 
     telescope_config.init()
