@@ -1,7 +1,7 @@
 local module = {}
 
-function module.init()
-    max_line_length = {
+local function setup_max_line_length()
+    local max_line_length = {
         python = '79',
         javascript = '79',
         ruby = '79',
@@ -17,6 +17,20 @@ function module.init()
             end
         })
     end
+end
+
+local function trim_trailing_spaces()
+    vim.api.nvim_create_autocmd("BufWritePre", {
+        pattern = "*",
+        callback = function(args)
+            vim.cmd("silent! %s/\\s\\+$//e")
+        end
+    })
+end
+
+function module.init()
+    setup_max_line_length()
+    trim_trailing_spaces()
 end
 
 return module
