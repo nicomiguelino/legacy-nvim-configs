@@ -39,6 +39,7 @@ function module.init()
         -- Legacy Plugins
         -- * Use a more modern and Lua-friendly plugin if possible.
         'MattesGroeger/vim-bookmarks',
+        'tom-anders/telescope-vim-bookmarks.nvim',
     })
 
     telescope_config.init()
