@@ -38,6 +38,7 @@ function module.init()
         'MattesGroeger/vim-bookmarks',
         'tom-anders/telescope-vim-bookmarks.nvim',
         'windwp/nvim-autopairs',
+        'tpope/vim-commentary',
     })
 
     telescope_config.init()
