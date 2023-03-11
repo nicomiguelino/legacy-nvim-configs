@@ -35,12 +35,17 @@ function module.init()
             },
             version = 'nightly',
         },
+        {
+            'mattn/emmet-vim',
+            setup = function()
+                vim.g.user_emmet_leader_key = '<C-h>'
+            end,
+        },
         'MattesGroeger/vim-bookmarks',
         'tom-anders/telescope-vim-bookmarks.nvim',
         'windwp/nvim-autopairs',
         'tpope/vim-commentary',
         'editorconfig/editorconfig-vim',
-        'mattn/emmet-vim',
     })
 
     telescope_config.init()

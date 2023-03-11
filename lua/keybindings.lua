@@ -10,15 +10,10 @@ local function init_tab_keymaps()
     set_keymap('n', '<leader>tk', ':-tabmove<CR>', {noremap = true})
 end
 
-local function init_emmet_keymaps()
-    vim.g.user_emmet_leader_key = '<C-h>'
-end
-
 function module.init()
     set_keymap('n', '<leader>w', '<C-w>', {noremap = true})
     set_keymap('n', '<leader>hn', ':nohlsearch<CR>', {noremap = true})
     init_tab_keymaps()
-    init_emmet_keymaps()
 end
 
 return module
