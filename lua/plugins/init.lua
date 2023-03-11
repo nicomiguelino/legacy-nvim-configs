@@ -34,7 +34,11 @@ function module.init()
                 'nvim-tree/nvim-web-devicons',
             },
             version = 'nightly',
-        }
+        },
+
+        -- Legacy Plugins
+        -- * Use a more modern and Lua-friendly plugin if possible.
+        'MattesGroeger/vim-bookmarks',
     })
 
     telescope_config.init()
