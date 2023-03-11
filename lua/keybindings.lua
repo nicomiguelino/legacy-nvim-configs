@@ -11,7 +11,7 @@ local function init_tab_keymaps()
 end
 
 local function init_emmet_keymaps()
-    vim.g.user_emmet_leader_key = '<C-h>'
+    vim.cmd('let g:user_emmet_leader_key = \'<C-h>\'')
 end
 
 function module.init()
