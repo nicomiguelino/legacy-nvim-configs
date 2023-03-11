@@ -39,6 +39,7 @@ function module.init()
         'tom-anders/telescope-vim-bookmarks.nvim',
         'windwp/nvim-autopairs',
         'tpope/vim-commentary',
+        'editorconfig/editorconfig-vim',
     })
 
     telescope_config.init()
