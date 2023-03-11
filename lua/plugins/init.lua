@@ -41,6 +41,10 @@ function module.init()
                 vim.g.user_emmet_leader_key = '<C-h>'
             end,
         },
+        {
+            'mg979/vim-visual-multi',
+            branch = 'master',
+        },
         'MattesGroeger/vim-bookmarks',
         'tom-anders/telescope-vim-bookmarks.nvim',
         'windwp/nvim-autopairs',
