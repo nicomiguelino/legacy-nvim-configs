@@ -12,7 +12,7 @@ function module.init()
     vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
     -- Bookmarks
-    vim.keymap.set('n', '<leader>ba', require('telescope').extensions.vim_bookmarks.all, {})
+    vim.keymap.set('n', '<leader>ba', telescope.extensions.vim_bookmarks.all, {})
 end
 
 return module
