@@ -37,7 +37,7 @@ function module.init()
         },
         {
             'mattn/emmet-vim',
-            setup = function()
+            init = function()
                 vim.g.user_emmet_leader_key = '<C-h>'
             end,
         },
