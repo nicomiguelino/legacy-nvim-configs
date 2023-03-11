@@ -40,6 +40,7 @@ function module.init()
         'windwp/nvim-autopairs',
         'tpope/vim-commentary',
         'editorconfig/editorconfig-vim',
+        'mattn/emmet-vim',
     })
 
     telescope_config.init()
