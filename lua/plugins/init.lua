@@ -35,16 +35,15 @@ function module.init()
             },
             version = 'nightly',
         },
-
-        -- Legacy Plugins
-        -- * Use a more modern and Lua-friendly plugin if possible.
         'MattesGroeger/vim-bookmarks',
         'tom-anders/telescope-vim-bookmarks.nvim',
+        'windwp/nvim-autopairs',
     })
 
     telescope_config.init()
     require('lualine').setup()
     require('nvim-web-devicons').setup()
+    require("nvim-autopairs").setup({})
 end
 
 return module
