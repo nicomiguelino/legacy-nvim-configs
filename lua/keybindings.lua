@@ -11,14 +11,14 @@ local function init_tab_keymaps()
 end
 
 local function init_emmet_keymaps()
-    vim.cmd('let g:user_emmet_leader_key = \'<C-h>\'')
+    vim.g.user_emmet_leader_key = '<C-h>'
 end
 
 function module.init()
     set_keymap('n', '<leader>w', '<C-w>', {noremap = true})
-    init_tab_keymaps()
-
     set_keymap('n', '<leader>hn', ':nohlsearch<CR>', {noremap = true})
+    init_tab_keymaps()
+    init_emmet_keymaps()
 end
 
 return module
