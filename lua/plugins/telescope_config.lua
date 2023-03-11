@@ -13,8 +13,8 @@ function module.init()
     vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
     -- Bookmarks
-    -- vim.keymap.set('n', '<leader>ba', telescope.extensions.vim_bookmarks.all, {})
     vim.keymap.set('n', '<leader>ba', bookmarks.all, {})
+    vim.keymap.set('n', '<leader>bf', bookmarks.current_file, {})
 end
 
 return module
