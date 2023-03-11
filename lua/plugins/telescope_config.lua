@@ -2,8 +2,7 @@ local module = {}
 
 function module.init()
     local builtin = require('telescope.builtin')
-    local telescope = require('telescope')
-    telescope.load_extension('vim_bookmarks')
+    require('telescope').load_extension('vim_bookmarks')
     local bookmarks = telescope.extensions.vim_bookmarks
 
     vim.keymap.set('n', '<leader><space>', builtin.find_files, {})
@@ -13,8 +12,7 @@ function module.init()
     vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
     -- Bookmarks
-    -- vim.keymap.set('n', '<leader>ba', bookmarks.all(), {})
-    -- vim.keymap.set('n', '<leader>bf', bookmarks.current_file(), {})
+    vim.keymap.set('n', '<leader>ba', require('telescope').extensions.vim_bookmarks.all, {})
 end
 
 return module
