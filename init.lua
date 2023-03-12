@@ -5,4 +5,5 @@ require('keybindings').init()
 require('filetree').init()
 
 -- Color scheme
-vim.cmd.colorscheme 'monokai'
+vim.cmd.colorscheme 'catppuccin-frappe'
+vim.g.VM_theme = 'spacegray'

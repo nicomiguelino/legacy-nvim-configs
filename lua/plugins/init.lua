@@ -45,6 +45,7 @@ function module.init()
             'mg979/vim-visual-multi',
             branch = 'master',
         },
+        { "catppuccin/nvim", name = "catppuccin" },
         'MattesGroeger/vim-bookmarks',
         'tom-anders/telescope-vim-bookmarks.nvim',
         'windwp/nvim-autopairs',
