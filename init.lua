@@ -3,6 +3,7 @@ require('autocommands').init()
 require('plugins').init()
 require('keybindings').init()
 require('filetree').init()
+require('tabby').init()
 
 -- Color scheme
 vim.cmd.colorscheme 'monokai'
