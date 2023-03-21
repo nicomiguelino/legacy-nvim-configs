@@ -2,6 +2,8 @@ local module = {}
 
 local function set_global_options()
     local options = {
+        backup = false,
+        writebackup = false,
         relativenumber = true,
         number = true,
         hlsearch = true,
