@@ -5,7 +5,8 @@ function module.init()
 
     local theme = {
         fill = 'TabLineFill',
-        -- Also you can do this: fill = { fg='#f2e9de', bg='#907aa9', style='italic' }
+        -- Also you can do this:
+        -- fill = { fg='#f2e9de', bg='#907aa9', style='italic' },
         head = 'TabLine',
         current_tab = 'TabLineSel',
         tab = 'TabLine',
@@ -24,7 +25,7 @@ function module.init()
             line.sep('', hl, theme.fill),
             tab.is_current() and '' or '',
             tab.number(),
-            tab.name(),
+            -- tab.name(), -- TODO: Uncomment this to show tab name.
             tab.close_btn(''),
             line.sep('', hl, theme.fill),
             hl = hl,
