@@ -52,6 +52,7 @@ function module.init()
         'tpope/vim-commentary',
         'editorconfig/editorconfig-vim',
         'nanozuki/tabby.nvim',
+        'terrastruct/d2-vim',
     })
 
     telescope_config.init()
