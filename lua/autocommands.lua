@@ -7,6 +7,7 @@ local function setup_max_line_length()
         ruby = '79',
         html = '100',
         htmldjango = '100',
+        markdown = '80',
     }
 
     for language, length in pairs(max_line_length) do
