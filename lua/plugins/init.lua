@@ -53,6 +53,7 @@ function module.init()
         'editorconfig/editorconfig-vim',
         'nanozuki/tabby.nvim',
         'terrastruct/d2-vim',
+        'sindrets/diffview.nvim',
     })
 
     telescope_config.init()
