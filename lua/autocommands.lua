@@ -30,7 +30,8 @@ local function trim_trailing_spaces()
 end
 
 function module.init()
-    setup_max_line_length()
+    -- TODO: Uncomment whenever needed.
+    -- setup_max_line_length()
     trim_trailing_spaces()
 end
 
