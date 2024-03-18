@@ -73,10 +73,14 @@ function module.init()
                 vim.fn.system('npm ci')
                 vim.cmd('CocInstall -sync coc-tsserver coc-json coc-html coc-css coc-yaml coc-emmet coc-snippets coc-pyright coc-clangd')
             end,
+        },
+        {
+            'f-person/git-blame.nvim',
         }
     })
 
     telescope_config.init()
+
     require('lualine').setup()
     require('nvim-web-devicons').setup()
     require("nvim-autopairs").setup({})
