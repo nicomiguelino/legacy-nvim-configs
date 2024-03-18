@@ -69,7 +69,10 @@ function module.init()
         {
             'neoclide/coc.nvim',
             branch = 'master',
-            build = 'npm ci'
+            build = function()
+                vim.fn.system('npm ci')
+                vim.cmd('CocInstall -sync coc-tsserver coc-json coc-html coc-css coc-yaml coc-emmet coc-snippets coc-pyright coc-clangd')
+            end,
         }
     })
 
