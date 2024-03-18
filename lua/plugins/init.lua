@@ -33,7 +33,7 @@ function module.init()
             dependencies = {
                 'nvim-tree/nvim-web-devicons',
             },
-            version = 'nightly',
+            version = 'nightly'
         },
         {
             'mattn/emmet-vim',
@@ -66,6 +66,11 @@ function module.init()
                 }
             end,
         },
+        {
+            'neoclide/coc.nvim',
+            branch = 'master',
+            build = 'npm ci'
+        }
     })
 
     telescope_config.init()
