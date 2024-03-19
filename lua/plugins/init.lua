@@ -81,7 +81,6 @@ function module.init()
 
     telescope_config.init()
 
-    require('lualine').setup()
     require('nvim-web-devicons').setup()
     require("nvim-autopairs").setup({})
 end
