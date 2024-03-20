@@ -22,9 +22,17 @@ function init_lualine()
     })
 end
 
+function init_commentary()
+    -- Set `commentstring` of c++ files for `vim-commentary`.
+    vim.api.nvim_exec([[
+        au FileType cpp setlocal commentstring=//\ %s
+    ]], false)
+end
+
 -- Color scheme
 vim.cmd.colorscheme 'monokai'
 vim.g.VM_theme = 'spacegray'
 
 -- Main
 init_lualine()
+init_commentary()
