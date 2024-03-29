@@ -8,18 +8,7 @@ require('tabby').init()
 local git_blame = require('gitblame')
 
 function init_lualine()
-    vim.g.gitblame_display_virtual_text = 0 -- Disable virtual text
-
-    require('lualine').setup({
-        sections = {
-            lualine_c = {
-                {
-                    git_blame.get_current_blame_text,
-                    cond = git_blame.is_blame_text_available
-                }
-            }
-        }
-    })
+    require('lualine').setup()
 end
 
 function init_commentary()
