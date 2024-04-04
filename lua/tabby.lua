@@ -25,7 +25,7 @@ function module.init()
             line.sep(' ', hl, theme.fill),
             tab.is_current() and '' or '',
             tab.number(),
-            tab.name(),
+            -- tab.name(), -- TODO: Uncomment if needed.
             tab.close_btn(''),
             line.sep(' ', hl, theme.fill),
             hl = hl,
