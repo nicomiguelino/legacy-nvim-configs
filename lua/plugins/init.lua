@@ -69,9 +69,19 @@ function module.init()
         {
             'neoclide/coc.nvim',
             branch = 'master',
-            build = function()
-                vim.fn.system('npm ci')
-                vim.cmd('CocInstall -sync coc-tsserver coc-json coc-html coc-css coc-yaml coc-emmet coc-snippets coc-pyright coc-clangd')
+            build = 'npm ci',
+            init = function()
+                vim.g.coc_global_extensions = {
+                    'coc-tsserver',
+                    'coc-json',
+                    'coc-html',
+                    'coc-css',
+                    'coc-yaml',
+                    'coc-emmet',
+                    'coc-snippets',
+                    'coc-pyright',
+                    'coc-clangd',
+                }
             end,
         },
         {
