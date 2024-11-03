@@ -19,7 +19,7 @@ function init_commentary()
 end
 
 -- Color scheme
-vim.cmd.colorscheme 'gruvbox'
+vim.cmd.colorscheme 'dracula'
 vim.g.VM_theme = 'spacegray'
 
 -- Main

@@ -45,7 +45,34 @@ function module.init()
             branch = 'master',
         },
         { "catppuccin/nvim", name = "catppuccin" },
-        { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true },
+        {
+            "ellisonleao/gruvbox.nvim",
+            priority = 1000,
+            config = true
+        },
+        { "Mofiqul/dracula.nvim" },
+        {
+            "scottmckendry/cyberdream.nvim",
+            lazy = false,
+            priority = 1000,
+        },
+        { "rose-pine/neovim", name = "rose-pine" },
+        {
+            'maxmx03/fluoromachine.nvim',
+            lazy = false,
+            priority = 1000,
+            config = function ()
+                local fm = require 'fluoromachine'
+
+                fm.setup {
+                    glow = true,
+                    theme = 'fluoromachine',
+                    transparent = true,
+                }
+
+                vim.cmd.colorscheme 'fluoromachine'
+            end
+        },
         'MattesGroeger/vim-bookmarks',
         'tom-anders/telescope-vim-bookmarks.nvim',
         'windwp/nvim-autopairs',
