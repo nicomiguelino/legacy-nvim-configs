@@ -33,7 +33,6 @@ function module.init()
             dependencies = {
                 'nvim-tree/nvim-web-devicons',
             },
-            version = 'nightly'
         },
         {
             'mattn/emmet-vim',
