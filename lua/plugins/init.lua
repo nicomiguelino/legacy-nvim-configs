@@ -46,6 +46,7 @@ function module.init()
             branch = 'master',
         },
         { "catppuccin/nvim", name = "catppuccin" },
+        { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true },
         'MattesGroeger/vim-bookmarks',
         'tom-anders/telescope-vim-bookmarks.nvim',
         'windwp/nvim-autopairs',
