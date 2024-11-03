@@ -2,5 +2,7 @@
   "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/17.0.3/clangd_17.0.3/bin/clangd",
   "clangd.disableDiagnostics": true,
   "snippets.ultisnips.pythonPrompt": false,
-  "pyright.inlayHints.enabled": false
+  "pyright.inlayHints.functionReturnTypes": false,
+  "pyright.inlayHints.variableTypes": false,
+  "pyright.inlayHints.parameterTypes": false
 }
