@@ -25,3 +25,16 @@ vim.g.VM_theme = 'spacegray'
 -- Main
 init_lualine()
 init_commentary()
+
+-- nvim-treesitter
+require('nvim-treesitter.configs').setup {
+    highlight = {
+        enable = true,
+    },
+    indent = {
+        enable = true,
+    },
+}
+
+vim.wo.foldmethod = 'expr'
+vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
