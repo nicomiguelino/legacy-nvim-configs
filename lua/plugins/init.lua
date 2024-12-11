@@ -84,6 +84,7 @@ function module.init()
         'nanozuki/tabby.nvim',
         'terrastruct/d2-vim',
         'sindrets/diffview.nvim',
+        'kchmck/vim-coffee-script',
         {
             "hedyhli/outline.nvim",
             config = function()
