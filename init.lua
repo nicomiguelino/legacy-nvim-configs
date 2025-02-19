@@ -36,10 +36,5 @@ require('nvim-treesitter.configs').setup {
     },
 }
 
--- Disable Copilot by running Copilot disable.
-vim.api.nvim_exec([[
-    Copilot disable
-]], false)
-
 vim.wo.foldmethod = 'expr'
 vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
