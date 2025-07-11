@@ -10,7 +10,7 @@ This repo contains my personal Neovim settings used for everyday development tas
 ## Installation
 
 ```bash
-git clone https://github.com/nicomiguelino/nvim.git ~/.config/nvim
+git clone https://github.com/nicomiguelino/legacy-nvim-configs.git ~/.config/nvim
 ```
 
 ## Enabling GitHub Copilot
